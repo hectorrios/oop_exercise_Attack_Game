@@ -48,6 +48,14 @@
                                     <constraint firstAttribute="height" constant="184" id="trY-BC-pid"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-K4-8oO">
+                                <rect key="frame" x="20" y="281" width="198" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="WI0-8B-ly3"/>
+                                    <constraint firstAttribute="width" constant="198" id="vzC-CE-XhK"/>
+                                </constraints>
+                                <state key="normal" image="player1attackbtn"/>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-nD-quX">
                                 <rect key="frame" x="380" y="359" width="188" height="184"/>
                                 <constraints>
@@ -63,17 +71,30 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-K4-8oO">
-                                <rect key="frame" x="20" y="281" width="198" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7io-iU-WlM">
+                                <rect key="frame" x="417" y="303" width="140" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="WI0-8B-ly3"/>
-                                    <constraint firstAttribute="width" constant="198" id="vzC-CE-XhK"/>
+                                    <constraint firstAttribute="width" constant="140" id="KRv-HP-iKg"/>
+                                    <constraint firstAttribute="height" constant="21" id="gue-lu-GgO"/>
                                 </constraints>
-                                <state key="normal" image="player1attackbtn"/>
-                            </button>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-ad-Fkw">
+                                <rect key="frame" x="45" y="300" width="148" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="SP1-ih-SnG"/>
+                                    <constraint firstAttribute="height" constant="21" id="W8R-Um-oHA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerY" secondItem="bWa-K4-8oO" secondAttribute="centerY" id="1G3-IP-Stg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1o-nD-quX" secondAttribute="bottom" constant="57" id="BXb-Oy-w7P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3k2-je-doZ" secondAttribute="bottom" id="EfG-wI-N58"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n1B-kK-GEg" secondAttribute="bottom" id="GAo-aY-vUc"/>
@@ -90,9 +111,12 @@
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" constant="32" id="ceG-G4-ip8"/>
                             <constraint firstItem="n1B-kK-GEg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eeq-gG-2Dr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0DX-dc-daE" secondAttribute="bottom" constant="57" id="i6g-B4-fHq"/>
+                            <constraint firstItem="7io-iU-WlM" firstAttribute="centerY" secondItem="TSo-wK-bgk" secondAttribute="centerY" id="j14-hb-biB"/>
                             <constraint firstItem="bWa-K4-8oO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="obc-Xy-Kqg"/>
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" id="oqh-lu-THE"/>
+                            <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerX" secondItem="bWa-K4-8oO" secondAttribute="centerX" id="pwy-bP-phu"/>
                             <constraint firstItem="TSo-wK-bgk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="syw-bZ-fcJ"/>
+                            <constraint firstItem="7io-iU-WlM" firstAttribute="centerX" secondItem="TSo-wK-bgk" secondAttribute="centerX" id="uvp-sC-sAt"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
