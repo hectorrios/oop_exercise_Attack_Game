@@ -98,10 +98,21 @@
                                     <constraint firstAttribute="height" constant="45" id="D9r-9B-yFF"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 has killed Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUh-Rg-nc2">
+                                <rect key="frame" x="150" y="561" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="btN-4a-Vyb"/>
+                                    <constraint firstAttribute="height" constant="21" id="o0R-Lg-zDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerY" secondItem="bWa-K4-8oO" secondAttribute="centerY" id="1G3-IP-Stg"/>
+                            <constraint firstItem="eUh-Rg-nc2" firstAttribute="centerX" secondItem="kWL-Ip-127" secondAttribute="centerX" id="6IV-tr-eYh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1o-nD-quX" secondAttribute="bottom" constant="57" id="BXb-Oy-w7P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3k2-je-doZ" secondAttribute="bottom" id="EfG-wI-N58"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n1B-kK-GEg" secondAttribute="bottom" id="GAo-aY-vUc"/>
@@ -118,6 +129,7 @@
                             <constraint firstAttribute="trailing" secondItem="n1B-kK-GEg" secondAttribute="trailing" id="Xsc-yY-bzY"/>
                             <constraint firstItem="0DX-dc-daE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="29" id="b7V-ZB-3Ik"/>
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" constant="32" id="ceG-G4-ip8"/>
+                            <constraint firstItem="eUh-Rg-nc2" firstAttribute="centerY" secondItem="kWL-Ip-127" secondAttribute="centerY" id="duT-Fj-MkQ"/>
                             <constraint firstItem="n1B-kK-GEg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eeq-gG-2Dr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0DX-dc-daE" secondAttribute="bottom" constant="57" id="i6g-B4-fHq"/>
                             <constraint firstItem="7io-iU-WlM" firstAttribute="centerY" secondItem="TSo-wK-bgk" secondAttribute="centerY" id="j14-hb-biB"/>
@@ -132,6 +144,7 @@
                             <mask key="constraints">
                                 <exclude reference="Wwe-DX-apL"/>
                                 <exclude reference="oqh-lu-THE"/>
+                                <exclude reference="qEB-bo-tKD"/>
                                 <exclude reference="BXb-Oy-w7P"/>
                                 <exclude reference="JYZ-DG-yCU"/>
                             </mask>
