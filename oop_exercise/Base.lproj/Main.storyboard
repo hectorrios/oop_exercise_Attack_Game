@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="60" id="XEM-h0-h0e"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="0DX-dc-daE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="0DX-dc-daE" userLabel="player1">
                                 <rect key="frame" x="29" y="359" width="169" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="169" id="3x2-nW-c5c"/>
@@ -56,7 +56,7 @@
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-nD-quX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-nD-quX" userLabel="player2">
                                 <rect key="frame" x="380" y="359" width="188" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="184" id="71h-MD-Z0b"/>
@@ -150,6 +150,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="eUh-Rg-nc2" id="hmJ-6R-sFV"/>
+                        <outlet property="player1ImageView" destination="0DX-dc-daE" id="POR-Zx-7NT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
