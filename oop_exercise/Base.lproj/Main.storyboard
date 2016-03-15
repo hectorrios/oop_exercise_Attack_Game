@@ -91,6 +91,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text-holder" translatesAutoresizingMaskIntoConstraints="NO" id="kWL-Ip-127">
+                                <rect key="frame" x="125" y="550" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="1IN-N1-TV7"/>
+                                    <constraint firstAttribute="height" constant="45" id="D9r-9B-yFF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -100,7 +107,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n1B-kK-GEg" secondAttribute="bottom" id="GAo-aY-vUc"/>
                             <constraint firstItem="3k2-je-doZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HS3-MB-9kq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0DX-dc-daE" secondAttribute="bottom" constant="57" id="JYZ-DG-yCU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kWL-Ip-127" secondAttribute="bottom" constant="5" id="Jak-fe-YbN"/>
                             <constraint firstAttribute="trailing" secondItem="3k2-je-doZ" secondAttribute="trailing" id="K9N-AT-p60"/>
+                            <constraint firstItem="kWL-Ip-127" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTQ-1d-wTf"/>
                             <constraint firstItem="n1B-kK-GEg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MAb-LQ-G01"/>
                             <constraint firstItem="0DX-dc-daE" firstAttribute="top" secondItem="bWa-K4-8oO" secondAttribute="bottom" constant="13" id="OvB-MB-tmp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1o-nD-quX" secondAttribute="bottom" constant="57" id="VEm-kT-W20"/>
@@ -115,6 +124,7 @@
                             <constraint firstItem="bWa-K4-8oO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="obc-Xy-Kqg"/>
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" id="oqh-lu-THE"/>
                             <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerX" secondItem="bWa-K4-8oO" secondAttribute="centerX" id="pwy-bP-phu"/>
+                            <constraint firstItem="kWL-Ip-127" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qEB-bo-tKD"/>
                             <constraint firstItem="TSo-wK-bgk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="syw-bZ-fcJ"/>
                             <constraint firstItem="7io-iU-WlM" firstAttribute="centerX" secondItem="TSo-wK-bgk" secondAttribute="centerX" id="uvp-sC-sAt"/>
                         </constraints>
@@ -140,5 +150,6 @@
         <image name="player" width="406" height="441"/>
         <image name="player1attackbtn" width="212" height="78"/>
         <image name="player2attackbtn" width="212" height="78"/>
+        <image name="text-holder" width="696" height="106"/>
     </resources>
 </document>
