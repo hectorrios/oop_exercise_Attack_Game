@@ -33,6 +33,12 @@ class Character {
         }
     }
     
+    var isAlive: Bool {
+        get {
+            return (self._hp > 0)
+        }
+    }
+    
     //MARK: Initializers
     init(name: String, startingHp: Int, attackPwr: Int) {
         self._name = name
@@ -40,6 +46,14 @@ class Character {
         //default hp and attackPwr
         self._hp = startingHp
         self._attackPwr = attackPwr
+    }
+    
+    //MARK: methods
+    
+    func attemptAttack(attackPwr: Int) -> Bool {
+        self._hp -= attackPwr
+        
+        return true
     }
     
 }

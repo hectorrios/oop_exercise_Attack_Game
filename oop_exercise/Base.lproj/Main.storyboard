@@ -152,7 +152,10 @@
                     </view>
                     <connections>
                         <outlet property="lblMessage" destination="eUh-Rg-nc2" id="hmJ-6R-sFV"/>
+                        <outlet property="player1AttackBtn" destination="bWa-K4-8oO" id="a5a-Ci-2UF"/>
                         <outlet property="player1ImageView" destination="0DX-dc-daE" id="POR-Zx-7NT"/>
+                        <outlet property="player2AttackBtn" destination="TSo-wK-bgk" id="LGQ-Qs-5ot"/>
+                        <outlet property="player2ImageView" destination="M1o-nD-quX" id="rdp-8J-F0z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
