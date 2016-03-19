@@ -41,6 +41,17 @@
                                     <constraint firstAttribute="height" constant="60" id="XEM-h0-h0e"/>
                                 </constraints>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-1H-miz" userLabel="btnRestartGame">
+                                <rect key="frame" x="117" y="49" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="ImC-Q9-JpH"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zs0-k0-Yxo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="text-holder"/>
+                                <connections>
+                                    <action selector="onRestartGameBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zax-ox-j0W"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="0DX-dc-daE" userLabel="player1">
                                 <rect key="frame" x="29" y="359" width="169" height="184"/>
                                 <constraints>
@@ -55,6 +66,9 @@
                                     <constraint firstAttribute="width" constant="198" id="vzC-CE-XhK"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayer1BtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pth-VQ-Giy"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-nD-quX" userLabel="player2">
                                 <rect key="frame" x="380" y="359" width="188" height="184"/>
@@ -70,6 +84,9 @@
                                     <constraint firstAttribute="height" constant="65" id="oEq-m0-Wyh"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayer2BtnChecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6l-8D-a9F"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7io-iU-WlM">
                                 <rect key="frame" x="417" y="303" width="140" height="21"/>
@@ -101,18 +118,26 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 has killed Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUh-Rg-nc2">
                                 <rect key="frame" x="150" y="561" width="300" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="btN-4a-Vyb"/>
+                                    <constraint firstAttribute="width" constant="340" id="btN-4a-Vyb"/>
                                     <constraint firstAttribute="height" constant="21" id="o0R-Lg-zDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to Restart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss5-6h-w73">
+                                <rect key="frame" x="125" y="63" width="350" height="21"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ViP-1H-miz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0x2-Fc-lSM"/>
                             <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerY" secondItem="bWa-K4-8oO" secondAttribute="centerY" id="1G3-IP-Stg"/>
                             <constraint firstItem="eUh-Rg-nc2" firstAttribute="centerX" secondItem="kWL-Ip-127" secondAttribute="centerX" id="6IV-tr-eYh"/>
+                            <constraint firstItem="ViP-1H-miz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="8vJ-YS-akn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="M1o-nD-quX" secondAttribute="bottom" constant="57" id="BXb-Oy-w7P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3k2-je-doZ" secondAttribute="bottom" id="EfG-wI-N58"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n1B-kK-GEg" secondAttribute="bottom" id="GAo-aY-vUc"/>
@@ -129,10 +154,12 @@
                             <constraint firstAttribute="trailing" secondItem="n1B-kK-GEg" secondAttribute="trailing" id="Xsc-yY-bzY"/>
                             <constraint firstItem="0DX-dc-daE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="29" id="b7V-ZB-3Ik"/>
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" constant="32" id="ceG-G4-ip8"/>
+                            <constraint firstItem="Ss5-6h-w73" firstAttribute="centerX" secondItem="ViP-1H-miz" secondAttribute="centerX" id="dlx-Cq-zX5"/>
                             <constraint firstItem="eUh-Rg-nc2" firstAttribute="centerY" secondItem="kWL-Ip-127" secondAttribute="centerY" id="duT-Fj-MkQ"/>
                             <constraint firstItem="n1B-kK-GEg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eeq-gG-2Dr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0DX-dc-daE" secondAttribute="bottom" constant="57" id="i6g-B4-fHq"/>
                             <constraint firstItem="7io-iU-WlM" firstAttribute="centerY" secondItem="TSo-wK-bgk" secondAttribute="centerY" id="j14-hb-biB"/>
+                            <constraint firstItem="Ss5-6h-w73" firstAttribute="centerY" secondItem="ViP-1H-miz" secondAttribute="centerY" id="niw-yO-8Up"/>
                             <constraint firstItem="bWa-K4-8oO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="obc-Xy-Kqg"/>
                             <constraint firstAttribute="trailing" secondItem="M1o-nD-quX" secondAttribute="trailing" id="oqh-lu-THE"/>
                             <constraint firstItem="GAR-ad-Fkw" firstAttribute="centerX" secondItem="bWa-K4-8oO" secondAttribute="centerX" id="pwy-bP-phu"/>
@@ -151,7 +178,11 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="btnRestartGame" destination="ViP-1H-miz" id="s1G-hj-z6q"/>
                         <outlet property="lblMessage" destination="eUh-Rg-nc2" id="hmJ-6R-sFV"/>
+                        <outlet property="lblPlayer1Attack" destination="7io-iU-WlM" id="c5k-vJ-3Uk"/>
+                        <outlet property="lblPlayer2Attack" destination="GAR-ad-Fkw" id="2hT-XO-YfZ"/>
+                        <outlet property="lblRestartGame" destination="Ss5-6h-w73" id="L4b-cT-f50"/>
                         <outlet property="player1AttackBtn" destination="bWa-K4-8oO" id="a5a-Ci-2UF"/>
                         <outlet property="player1ImageView" destination="0DX-dc-daE" id="POR-Zx-7NT"/>
                         <outlet property="player2AttackBtn" destination="TSo-wK-bgk" id="LGQ-Qs-5ot"/>

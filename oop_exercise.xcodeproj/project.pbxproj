@@ -14,6 +14,7 @@
 		8CAF99E91C8F7E2E005BF253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF99E81C8F7E2E005BF253 /* Assets.xcassets */; };
 		8CAF99EC1C8F7E2E005BF253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CAF99EA1C8F7E2E005BF253 /* LaunchScreen.storyboard */; };
 		8CAF99F41C90C0C7005BF253 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF99F31C90C0C7005BF253 /* Character.swift */; };
+		8CAFBAC01C9AB007006C9A71 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBABF1C9AB007006C9A71 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8CAF99EB1C8F7E2E005BF253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CAF99ED1C8F7E2E005BF253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAF99F31C90C0C7005BF253 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		8CAFBABF1C9AB007006C9A71 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8CAF99F31C90C0C7005BF253 /* Character.swift */,
 				8CAF99EA1C8F7E2E005BF253 /* LaunchScreen.storyboard */,
 				8CAF99ED1C8F7E2E005BF253 /* Info.plist */,
+				8CAFBABF1C9AB007006C9A71 /* Player.swift */,
 			);
 			path = oop_exercise;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFBAC01C9AB007006C9A71 /* Player.swift in Sources */,
 				8CAF99F41C90C0C7005BF253 /* Character.swift in Sources */,
 				8CAF99E41C8F7E2E005BF253 /* ViewController.swift in Sources */,
 				8CAF99E21C8F7E2E005BF253 /* AppDelegate.swift in Sources */,
