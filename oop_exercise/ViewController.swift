@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -26,11 +27,22 @@ class ViewController: UIViewController {
     var player1 : Player?;
     var player2 : Player?;
     var isGameOver: Bool = false
+    var backgroundMusic: AVAudioPlayer!
     
     //MARK: lifecycle funcs
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let path = NSBundle.mainBundle().pathForResource("Sky Portal", ofType: "mp3")
+        let soundUrl = NSURL(fileURLWithPath: path!)
+        
+        do {
+            try backgroundMusic = AVAudioPlayer(contentsOfURL: soundUrl)
+            backgroundMusic.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+
         
         self.initGame()
 
@@ -124,6 +136,9 @@ class ViewController: UIViewController {
         self.lblMessage.text = "Get Ready to Fight"
         
         self.isGameOver = false
+        
+        //start background music
+        self.backgroundMusic.play()
     }
     
     func setGameOver(message: String) {
@@ -137,6 +152,8 @@ class ViewController: UIViewController {
         //Show the click to restart buttons
         self.btnRestartGame.hidden = false
         self.lblRestartGame.hidden = false
+        
+        self.backgroundMusic.stop()
         
     }
     
